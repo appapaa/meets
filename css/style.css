@@ -1,12 +1,39 @@
 body {
   background-color: gray;
-  color: red; }
-  body canvas {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    position: absolute; }
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.head {
+  position: fixed;
+  width: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background-color: blue; }
+
+.body {
+  width: 200%;
+  height: auto;
+  top: 30px;
+  left: 0;
+  bottom: 0;
+  position: absolute; }
+  .body > div {
+    float: left;
+    width: 50%;
+    height: 100%; }
+
+#form2 {
+  background-color: green; }
 
 /*# sourceMappingURL=style.css.map */
